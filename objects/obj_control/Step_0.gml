@@ -6,6 +6,20 @@ if (global.levelup == true || obj_player.died == true)|| global.weapon_upgrade =
 	exit;
 }
 
+if (alarm[3] <= 0) {
+	
+	switch(skull_red_eyes){
+		case true:
+		skull_red_eyes = false;
+		break;
+	
+		case false:
+		skull_red_eyes = true;
+		break;
+	}
+}
+
+
 if alarm[0] <= 0{
 	
 	var _side = irandom(1);

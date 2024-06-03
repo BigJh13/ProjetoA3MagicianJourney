@@ -93,7 +93,12 @@ draw_set_valign(fa_middle);
 var _xx_kills = 5;
 var _yy_kills = 20;
 
-draw_sprite(spr_skull_kill_counter, 1, _xx_kills, _yy_kills)
+if skull_red_eyes == true {
+	draw_sprite(spr_skull_kill_counter, 1, _xx_kills, _yy_kills)
+}else if skull_red_eyes == false {
+	draw_sprite(spr_skull_kill_counter, 0, _xx_kills, _yy_kills)
+}
+
 draw_text(_xx_kills + 20, _yy_kills + 5, string(global.kills_counter) + " / " + string(int64(global.kills_counter_max)))
 
 

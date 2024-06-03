@@ -28,3 +28,21 @@ if (point_distance(obj_player.x, obj_player.y, x, y) < 50){
 	walk = true;
 }
 
+var _screen_side_left
+
+if x >= obj_player.x {
+	_screen_side_left = true; 
+}else if x < obj_player.x {
+	_screen_side_left = false;
+}
+
+if(_screen_side_left)
+{
+   sprite_index = spr_skeleton_skull;
+   image_xscale = -1;
+}
+if (_screen_side_left)
+{
+   sprite_index = spr_skeleton_skull;
+   image_xscale = 1;
+}

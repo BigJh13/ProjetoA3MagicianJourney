@@ -1,5 +1,6 @@
 if global.levelup == true || global.weapon_upgrade == true{
 alarm[1] += 1	
+exit;
 }
 
 if alarm[0] <= 0{

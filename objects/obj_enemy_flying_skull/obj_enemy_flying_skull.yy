@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Skeleton_Flaming_Skull",
-    "path":"sprites/Skeleton_Flaming_Skull/Skeleton_Flaming_Skull.yy",
+    "name":"spr_skeleton_skull",
+    "path":"sprites/spr_skeleton_skull/spr_skeleton_skull.yy",
   },
   "spriteMaskId":null,
   "visible":true,

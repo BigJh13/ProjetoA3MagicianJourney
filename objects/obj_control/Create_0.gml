@@ -43,6 +43,10 @@ upgrade_scale = 1;
 weapon_upgrade_alpha = 1;
 weapon_upgrade_scale = 1;
 
+skull_red_eyes = false;
+skull_red_eyes_change_timer = 3 * game_get_speed(gamespeed_fps);
+alarm[3] = skull_red_eyes_change_timer;
+
 global.shield_bonus_damage = 0;
 global.sword_bonus_damage = 0;
 global.orb_spell_bonus_damage = 0;
@@ -58,7 +62,7 @@ global.create_shield = false;
 global.create_sword = false;
 global.orb_spell_amount = 1;
 
-global.orb_spell_pierce = 10 + global.shop_orb_spell_pierce;
+global.orb_spell_pierce = 1 + global.shop_orb_spell_pierce;
 
 global.shield_scale = 1;
 global.sword_scale = 1;

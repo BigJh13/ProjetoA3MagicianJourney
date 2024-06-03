@@ -77,4 +77,20 @@ if(hp_increase_timer <= 0){
 	hp_increase_timer = 4 * game_get_speed(gamespeed_fps);
 }
 
+var _screen_side_left
 
+var _direcao = obj_player.x;
+
+if x >= _direcao {
+	_screen_side_left = true; 
+}else if x < _direcao {
+	_screen_side_left = false;
+}
+
+if(_screen_side_left)
+{
+   image_xscale = -1;
+}else if (!_screen_side_left)
+{
+   image_xscale = 1;
+}
