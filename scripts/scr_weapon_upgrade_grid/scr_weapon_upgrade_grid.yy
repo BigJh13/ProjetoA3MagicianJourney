@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_weapon_upgrade_grid",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_weapon_upgrade_grid",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
