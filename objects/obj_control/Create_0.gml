@@ -58,7 +58,7 @@ global.create_shield = false;
 global.create_sword = false;
 global.orb_spell_amount = 1;
 
-global.orb_spell_pierce = 1 + global.shop_orb_spell_pierce;
+global.orb_spell_pierce = 10 + global.shop_orb_spell_pierce;
 
 global.shield_scale = 1;
 global.sword_scale = 1;
