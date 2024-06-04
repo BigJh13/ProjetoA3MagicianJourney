@@ -85,7 +85,6 @@ if (global.weapon_upgrade == true){
 	exit;
 }
 
-
 draw_set_font(fnt_small);
 draw_set_halign(fa_left);
 draw_set_valign(fa_middle);
@@ -101,19 +100,63 @@ if skull_red_eyes == true {
 
 draw_text(_xx_kills + 20, _yy_kills + 5, string(global.kills_counter) + " / " + string(int64(global.kills_counter_max)))
 
-
 var _xx_coin = 5;
 var _yy_coin = 40;
 
 draw_sprite(spr_coin_icon, 1, _xx_coin, _yy_coin)
 draw_text(_xx_coin + 20, _yy_coin + 5, string(global.money))
 
-
-		
 draw_sprite(spr_exp_hud, -1, 3, 3);
 draw_sprite_ext(spr_exp_bar, -1, 4, 4, global.exp/global.exp_max, 1, 0, c_white, 1);
 
 draw_sprite(spr_exp_hud, -1, 3, 10);
+
 if(obj_player.player_hp > 0){
 	draw_sprite_ext(spr_life_bar, -1, 4, 11, obj_player.player_hp/obj_player.player_hp_max, 1, 0, c_white, 1);
+
+}else if obj_player.player_hp <= 0{
+		
+	draw_set_font(fnt_menu);
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_middle);
+	
+	var _xx = display_get_gui_width()/2;
+	var _yy = display_get_gui_height()/2;
+	
+	var _mx = device_mouse_x_to_gui(0);
+	var _my = device_mouse_y_to_gui(0);
+	
+	var _sprw = sprite_get_width(spr_button_death);
+	var _sprh = sprite_get_height(spr_button_death);
+	
+	draw_set_alpha(.7);
+	draw_rectangle_color(0,0,display_get_gui_width(), display_get_gui_height(), c_black, c_black, c_black, c_black, false);
+	draw_set_alpha(1);
+	
+	draw_text(_xx, _yy-40, "voce pereceu");
+	
+	draw_set_font(fnt_menu_death);
+	
+	draw_sprite(spr_button_death,1,_xx-80,_yy+44);
+	draw_text(_xx-80, _yy+40, "menu");
+	
+	draw_sprite(spr_button_death,1,_xx+80,_yy+44);
+	draw_text(_xx+80, _yy+40, "renascer");
+	
+	//button restart
+	if point_in_rectangle(_mx, _my, _xx+80 - (_sprw/2), _yy+40 - (_sprh/2), _xx+80 + (_sprw/2), _yy+40 + (_sprw/2)){
+		if(mouse_check_button_pressed(mb_left)){
+			room_restart();
+		}
+	}
+	//button menu
+	if point_in_rectangle(_mx, _my, _xx-80 - (_sprw/2), _yy+40 - (_sprh/2), _xx-80 + (_sprw/2), _yy+40 + (_sprw/2)){
+		if(mouse_check_button_pressed(mb_left)){
+			room_goto(rm_menu);
+		}
+	}
 }
+	
+
+
+

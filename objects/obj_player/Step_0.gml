@@ -2,9 +2,6 @@ if global.levelup == true || global.weapon_upgrade == true{
 	exit;
 }
 if obj_player.died == true{ //pause game 3/4
-	if (keyboard_check_pressed(vk_space)){
-        room_restart();
-    }
 	exit;
 }
 

@@ -34,6 +34,7 @@
   },
   "name":"Wein's Journey",
   "resources":[
+    {"id":{"name":"fnt_menu_death","path":"fonts/fnt_menu_death/fnt_menu_death.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"fnt_small","path":"fonts/fnt_small/fnt_small.yy",},},
     {"id":{"name":"obj_bought_shop_itens","path":"objects/obj_bought_shop_itens/obj_bought_shop_itens.yy",},},
@@ -78,6 +79,7 @@
     {"id":{"name":"snd_music2","path":"sounds/snd_music2/snd_music2.yy",},},
     {"id":{"name":"snd_music3","path":"sounds/snd_music3/snd_music3.yy",},},
     {"id":{"name":"camera","path":"sprites/camera/camera.yy",},},
+    {"id":{"name":"spr_button_death","path":"sprites/spr_button_death/spr_button_death.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_coin_icon","path":"sprites/spr_coin_icon/spr_coin_icon.yy",},},
     {"id":{"name":"spr_coin","path":"sprites/spr_coin/spr_coin.yy",},},

@@ -15,7 +15,7 @@ spell_1_cd = spell_1_timer;
 
 // Player status
 //health
-player_hp = 100;
+player_hp = 1;
 player_hp_max = 100;
 player_defense = 1;
 

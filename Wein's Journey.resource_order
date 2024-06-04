@@ -17,6 +17,7 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"fnt_menu_death","order":2,"path":"fonts/fnt_menu_death/fnt_menu_death.yy",},
     {"name":"fnt_menu","order":1,"path":"fonts/fnt_menu/fnt_menu.yy",},
     {"name":"obj_bought_shop_itens","order":22,"path":"objects/obj_bought_shop_itens/obj_bought_shop_itens.yy",},
     {"name":"obj_button_buy_damage","order":23,"path":"objects/obj_button_buy_damage/obj_button_buy_damage.yy",},
@@ -56,6 +57,7 @@
     {"name":"snd_music2","order":1,"path":"sounds/snd_music2/snd_music2.yy",},
     {"name":"snd_music3","order":2,"path":"sounds/snd_music3/snd_music3.yy",},
     {"name":"camera","order":3,"path":"sprites/camera/camera.yy",},
+    {"name":"spr_button_death","order":29,"path":"sprites/spr_button_death/spr_button_death.yy",},
     {"name":"spr_button","order":28,"path":"sprites/spr_button/spr_button.yy",},
     {"name":"spr_coin_icon","order":16,"path":"sprites/spr_coin_icon/spr_coin_icon.yy",},
     {"name":"spr_coin","order":17,"path":"sprites/spr_coin/spr_coin.yy",},
