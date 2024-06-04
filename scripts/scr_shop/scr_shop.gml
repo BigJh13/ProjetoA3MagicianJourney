@@ -15,34 +15,59 @@ function ds_grid_add_shop(_name, _effect){
 }
 
 function shop_damage(_grid){
-	var _effect = _grid[# 1, 0];
-	global.shop_damage += _effect
+	
+	var _money = global.current_money
+	
+	if (_money > 100){
+		global.current_money = _money - 100;
+		var _effect = _grid[# 1, 0];
+		global.shop_damage += _effect
+	}
 }
-
 
 function shop_defense(_grid){
-	var _effect = _grid[# 1, 1];
-	global.shop_defense += _effect
+	
+	var _money = global.current_money
+	
+	if (_money > 100){
+		global.current_money = _money - 100;
+		var _effect = _grid[# 1, 1];
+		global.shop_defense += _effect
+	}
 }
 
-
-function shop_exp_bonus(_grid){
-	var _effect = _grid[# 1, 2];
-	global.shop_exp_bonus += _effect
+function shop_exp_bonus(_grid){	
+	
+	var _money = global.current_money
+	
+	if (_money > 100){
+		global.current_money = _money - 100;
+		var _effect = _grid[# 1, 2];
+		global.shop_exp_bonus += _effect
+	}
 }
-
 
 function shop_money_bonus(_grid){
-	var _effect = _grid[# 1, 3];
-	global.shop_money_bonus += _effect
+	
+	var _money = global.current_money
+	
+	if (_money > 100){
+		global.current_money = _money - 100;
+		var _effect = _grid[# 1, 3];
+		global.shop_money_bonus += _effect
+	}
 }
-
 
 function shop_orb_spell_pierce(_grid){
-	var _effect = _grid[# 1, 4];
-	global.shop_orb_spell_pierce += _effect
+	
+	var _money = global.current_money
+	
+	if (_money > 100){
+		global.current_money = _money - 100;
+		var _effect = _grid[# 1, 4];
+		global.shop_orb_spell_pierce += _effect
+	}
 }
-
 
 
 
