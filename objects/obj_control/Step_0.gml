@@ -116,3 +116,29 @@ if global.exp >= global.exp_max {
 		ds_list_add(upgrade_list, _upgrade);
 	}
 }
+
+if alarm[4] <= 0{
+	switch(music){
+		case 1:
+		audio_play_sound(snd_music1, 0, false);
+		alarm[4] = audio_sound_length(snd_music1) * game_get_speed(gamespeed_fps);
+		music = 2;
+		break;
+		
+		case 2:
+		audio_play_sound(snd_music2, 0, false);
+		alarm[4] = audio_sound_length(snd_music2) * game_get_speed(gamespeed_fps);
+		music = 3;
+		break;
+		
+		case 3:
+		audio_play_sound(snd_music3, 0, false);
+		alarm[4] = audio_sound_length(snd_music3) * game_get_speed(gamespeed_fps);
+		music = 1;
+		break;
+	}
+}
+
+
+
+

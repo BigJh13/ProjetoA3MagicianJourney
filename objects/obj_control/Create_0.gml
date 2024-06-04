@@ -1,5 +1,8 @@
 randomize();
 
+music = 1;
+alarm[4] = 0;
+
 global.exp = 0;
 global.exp_bonus = 0 + global.shop_exp_bonus;
 global.exp_max = 100;
