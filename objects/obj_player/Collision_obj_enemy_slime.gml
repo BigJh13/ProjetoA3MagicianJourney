@@ -6,3 +6,5 @@ if !recently_hit{
 	recently_hit = true;
 	alarm[0] = invulnerability_frames*(game_get_speed(gamespeed_fps)/6);
 }
+
+recentily_hit_blend = 2;

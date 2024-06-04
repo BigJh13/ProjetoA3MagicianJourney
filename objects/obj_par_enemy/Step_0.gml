@@ -31,6 +31,15 @@ if (walk == true){
 	y += vspd;
 }
 
+if(recentily_hit_blend > 0){
+	
+	image_blend = c_red;
+	recentily_hit_blend--;
+
+}else{
+	image_blend = c_white;
+}
+
 if hp <= 0{
 	repeat(3){
 		var _xx_exp = irandom_range(-10, 10);

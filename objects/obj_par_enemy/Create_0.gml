@@ -11,3 +11,5 @@ hp = 20;
 hp_bonus = 0;
 hp_increase_timer = 270;
 defense = 0;
+
+recentily_hit_blend = 0;

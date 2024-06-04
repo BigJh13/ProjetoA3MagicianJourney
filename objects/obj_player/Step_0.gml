@@ -13,15 +13,6 @@ down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 var _xx = right - left;
 var _yy = down - up;
 
-//if alarm[0] <= 0{
-//	if invulnerable == true {
-//	}else{
-//	}
-////	invulnerable = false;
-//}else{
-////	invulnerable = true;
-//}
-
 if _xx != 0 or _yy != 0{
 	sprite_index = spr_player_walking;
 	
@@ -117,6 +108,15 @@ if (player_hp <= 0)
 if global.invulnerable == false && alarm[0] <= 0{
 	alarm[0] = obj_player.invulnerability_frames * game_get_speed(gamespeed_fps);
 	//global.invulnerable = true;
+}
+
+if(recentily_hit_blend > 0){
+	
+	image_blend = c_red;
+	recentily_hit_blend--;
+
+}else{
+	image_blend = c_white;
 }
 
 if alarm[0] <= 0 {
